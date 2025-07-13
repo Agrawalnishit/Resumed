@@ -7,13 +7,13 @@ const Skills = () => {
     {
       title: 'Languages',
       icon: Code,
-      skills: ['Python', 'HTML', 'CSS', 'JavaScript', 'C', 'SQL'],
+      skills: ['Python', 'JavaScript', 'C', 'SQL'],
       color: 'bg-blue-500'
     },
     {
       title: 'Frontend',
       icon: Palette,
-      skills: ['Streamlit', 'Gradio'],
+      skills: ['HTML', 'CSS', 'Streamlit', 'Gradio'],
       color: 'bg-purple-500'
     },
     {
@@ -31,7 +31,7 @@ const Skills = () => {
     {
       title: 'Tools',
       icon: Wrench,
-      skills: ['LangChain', 'MERN Stack (Learning)'],
+      skills: ['LangChain', 'MERN Stack (Progress)'],
       color: 'bg-indigo-500'
     }
   ];
