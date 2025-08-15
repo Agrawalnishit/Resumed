@@ -34,7 +34,8 @@ const Projects = () => {
       icon: ShoppingCart,
       color: 'bg-blue-500',
       tech: ['HTML', 'CSS', 'JavaScript'],
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=400',
+      repo: 'https://github.com/Agrawalnishit/amazon_clone.git'
     },
     {
       title: 'Medicine Detector',
@@ -42,7 +43,8 @@ const Projects = () => {
       icon: Pill,
       color: 'bg-green-500',
       tech: ['Streamlit', 'Python'],
-      image: 'https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=400',
+      repo: 'https://github.com/Agrawalnishit/Medicine-detector.git'
     },
     {
       title: 'Employee Management System',
@@ -74,7 +76,8 @@ const Projects = () => {
       icon: Mail,
       color: 'bg-yellow-500',
       tech: ['Python', 'smtplib', 'Automation'],
-      image: 'https://images.pexels.com/photos/261628/pexels-photo-261628.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'https://images.pexels.com/photos/261628/pexels-photo-261628.jpeg?auto=compress&cs=tinysrgb&w=400',
+      repo: 'https://github.com/Agrawalnishit/mini-task/blob/99dc860642e47e7afea086cc7dc8ab3e1ea29027/sendEmail.py'
     },
     {
       title: 'SMS Sender',
@@ -82,7 +85,8 @@ const Projects = () => {
       icon: Phone,
       color: 'bg-pink-500',
       tech: ['Python', 'Twilio', 'API', 'Automation'],
-      image: 'https://images.pexels.com/photos/276514/pexels-photo-276514.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'https://images.pexels.com/photos/276514/pexels-photo-276514.jpeg?auto=compress&cs=tinysrgb&w=400',
+      repo: 'https://github.com/Agrawalnishit/mini-task/blob/99dc860642e47e7afea086cc7dc8ab3e1ea29027/sendsms.py'
     },
     {
       title: 'WhatsApp Message Sender',
@@ -90,7 +94,8 @@ const Projects = () => {
       icon: ExternalLink,
       color: 'bg-green-500',
       tech: ['Python', 'pywhatkit', 'pyautogui', 'Automation'],
-      image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=400',
+      repo: 'https://github.com/Agrawalnishit/mini-task'
     },
     {
       title: 'Phone Call Automation',
@@ -98,7 +103,8 @@ const Projects = () => {
       icon: Phone,
       color: 'bg-blue-500',
       tech: ['Python', 'Twilio', 'API', 'Automation'],
-      image: 'https://images.pexels.com/photos/33999/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=400'
+      image: 'https://images.pexels.com/photos/33999/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=400',
+      repo: 'https://github.com/Agrawalnishit/mini-task/blob/99dc860642e47e7afea086cc7dc8ab3e1ea29027/phone.py'
     }
   ];
 
@@ -153,10 +159,16 @@ const Projects = () => {
                   </div>
                   
                   <div className="flex space-x-4">
-                    <button className="flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition-colors">
+                    <a
+                      href={project.repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition-colors"
+                      style={{ pointerEvents: project.repo ? 'auto' : 'none', opacity: project.repo ? 1 : 0.5 }}
+                    >
                       <Github size={16} />
                       <span>Code</span>
-                    </button>
+                    </a>
                     <button className="flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition-colors">
                       <ExternalLink size={16} />
                       <span>Demo</span>
