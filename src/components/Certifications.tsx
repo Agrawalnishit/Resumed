@@ -18,6 +18,11 @@ const Certifications = () => {
       title: 'Microsoft Azure Certificate',
       issuer: 'Microsoft',
       color: 'bg-purple-500'
+    },
+    {
+      title: 'AWS Cloud with Artificial Intelligence (AI) Workshop',
+      issuer: 'AWS (One Day Workshop)',
+      color: 'bg-yellow-500'
     }
   ];
 

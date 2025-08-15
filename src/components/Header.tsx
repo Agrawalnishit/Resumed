@@ -36,7 +36,7 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {['about', 'education', 'skills', 'projects', 'certifications', 'achievements'].map((item) => (
+            {['about', 'education', 'experience', 'skills', 'projects', 'certifications', 'achievements'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
@@ -72,7 +72,7 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden mt-4 py-4 bg-slate-800 rounded-lg shadow-lg border border-slate-700">
-            {['about', 'education', 'skills', 'projects', 'certifications', 'achievements'].map((item) => (
+            {['about', 'education', 'experience', 'skills', 'projects', 'certifications', 'achievements'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
